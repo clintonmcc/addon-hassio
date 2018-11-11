@@ -1,0 +1,12 @@
+ #Sample Sonoff Basic
+ - platform: mqtt
+    name: "Motion Light"
+    state_topic: "stat/motion/POWER"
+    command_topic: "cmnd/motion/POWER"
+    availability_topic: "tele/motion/LWT"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
